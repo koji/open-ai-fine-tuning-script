@@ -1,0 +1,18 @@
+{
+  "name": "finetuning-openai-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "author": "koji <koji.kanao@opentrons.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "scripts": {
+    "upload": "node uploader.js",
+    "train": "node fineTune.js",
+    "check-status": "node check.js",
+    "try-model": "node completion.js"
+  }
+}
